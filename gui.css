@@ -78,7 +78,6 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     width: 100%;
-    border: thin red solid;
     
 }
 
@@ -86,10 +85,12 @@
     border: thin lightgray solid;
     border-bottom: thick solid lightgray;
     background-color: white;
-    width: 300px;
+    max-width: 95%;
+    width: 275px;
     height: 250px;
     padding: 0px 0px 5px 0px;
     margin: 20px  10px ;
+    transition: transform .2s;
 }
 
 .box *{
@@ -99,8 +100,10 @@
 .box img{
     width:  280px;
     height: 150px;
+    max-width: 93%;
     object-fit: cover;
     padding-bottom: 0%;
+
 }
 
 .box h3{
@@ -111,4 +114,10 @@
     padding-top: 0%;
     padding-bottom: 0%;
     
+}
+
+
+
+.box:hover {
+  transform: scale(1.25); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
