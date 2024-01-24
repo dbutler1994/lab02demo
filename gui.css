@@ -88,9 +88,9 @@
     max-width: 95%;
     width: 275px;
     height: 250px;
-    padding: 0px 0px 5px 0px;
-    margin: 20px  10px ;
-    transition: transform .2s;
+    padding: 0px 5px 5px 0px;
+    margin: 25px  25px ;
+    transition: transform .2s, box-shadow 0.2s, z-index 0s;
 }
 
 .box *{
@@ -100,7 +100,7 @@
 .box img{
     width:  280px;
     height: 150px;
-    max-width: 93%;
+    max-width: 95%;
     object-fit: cover;
     padding-bottom: 0%;
 
@@ -119,5 +119,9 @@
 
 
 .box:hover {
-  transform: scale(1.25); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1.25);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 1; /* Set a higher z-index for the hovered box */ 
 }
+
+
